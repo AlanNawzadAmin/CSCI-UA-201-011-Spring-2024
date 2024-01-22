@@ -73,5 +73,10 @@ public class InheritanceExample {
 //		function_rectangle(r1);
 //		System.out.println("length is " + s1.getLength());
 //		System.out.println("width is " + s1.getWidth());
+
+////		Casting creates a new reference that points to the same object
+//		Square s3;
+//		s3 = (Square) r1;
+//		function_square(s3);
 	}
 }
