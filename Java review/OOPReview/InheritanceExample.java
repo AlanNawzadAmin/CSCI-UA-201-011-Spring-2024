@@ -36,19 +36,13 @@ class Square extends Rectangle{
 	private double length;
 	
 	public Square(double length) {
-		super(length, length);
-	}
-	
-	public void setLength(double length) {
-		super.setLength(length);
-		super.setWidth(length);
+		this.length = length;
 	}
 }
 
 public class InheritanceExample {
 	public static void main(String [] args) {
 		Square s1 = new Square(10.);
-		s1.setLength(5);
 		
 		System.out.println("length is " + s1.getLength());
 		System.out.println("width is " + s1.getWidth());
@@ -71,7 +65,7 @@ public class InheritanceExample {
 ////		Will this code raise an error?
 //		Rectangle r1;
 //		r1 = new Square(10.);
-//		function(r1);
+//		function_rectangle(r1);
 		
 ////		What will this code output?
 //		Rectangle r1;
