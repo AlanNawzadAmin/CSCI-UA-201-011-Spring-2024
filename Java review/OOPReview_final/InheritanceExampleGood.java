@@ -86,21 +86,22 @@ public class InheritanceExampleGood {
 //		s2 = new Rectangle(10., 10.);
 		
 ////		The type of the reference is used by the compiler
-////		to detect errors.
+////		to detect if fields or methods *can* be called.
 //		Rectangle r1;
 //		r1 = new Square(10.);
 ////		function_square(r1);
-//		
-////		Casting creates a new reference that points to the same object
-//		Square s3 = (Square) r1;
-//		function_square(s3);
 		
-////		The method that is used is decided at runtime,
+////		The method that is actually used is decided at runtime,
 ////		not compile time (Dynamic binding)!
 //		Rectangle r1;
 //		r1 = new Square(10.);
 //		function_rectangle(r1);
 //		System.out.println("length is " + s1.getLength());
 //		System.out.println("width is " + s1.getWidth());
+
+////		Casting creates a new reference that points to the same object
+//		Square s3;
+//		s3 = (Square) r1;
+//		function_square(s3);
 	}
 }
