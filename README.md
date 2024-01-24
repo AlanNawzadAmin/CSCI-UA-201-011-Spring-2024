@@ -11,7 +11,7 @@ Reading: Chapter 2.1, 2.2, 2.6.
 
 ### Class 2 Jan 24
 
-Finish Java review --casting, dynamic binding, abstract classes and interfaces.
+Finish Java review -- casting, dynamic binding, abstract classes and interfaces.
 List ADT and started ArrayList implementation.
 
 Reading: Chapter 2.3, 2.5, Chapter 7.1.
