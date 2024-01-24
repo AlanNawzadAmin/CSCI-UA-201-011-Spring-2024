@@ -1,0 +1,26 @@
+— Object oriented programming —
+
+What is encapsulation?
+What is the principle of least privilege?
+What does the static keyword do?
+What are accessor methods and why would you use them?
+
+— Inheritance —
+
+What is overriding? What is overloading?
+Say Square is a subclass of Rectangle. How is the constructor for Rectangle called in the constructor for Square?
+What are two situations in which you need to use the super keyword?
+
+If r1 is a reference variable, how does the compiler determine if I can call r1.method()?
+
+— casting and dynamic binding —
+Say Square is a subclass of Rectangle. Say Rectangle has a method RectangleMethod() that is overridden in Square and Square also has a new method SquareMethod().
+Consider the code:
+	Rectangle r1 = new Square();
+Will the following code run?
+	r1.SquareMethod();
+In the following code, which version of RectangleMethod() will run?
+	r1.RectangleMethod();
+
+What does casting do?
+What does instanceof do?
