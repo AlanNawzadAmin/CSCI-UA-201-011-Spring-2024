@@ -1,0 +1,25 @@
+
+— casting and dynamic binding —
+Say Square is a subclass of Rectangle. Say Rectangle has a method RectangleMethod() that is overridden in Square and Square also has a new method SquareMethod().
+Consider the code:
+	Rectangle r1 = new Square();
+Will the following code run?
+	r1.SquareMethod();
+In the following code, which version of RectangleMethod() will run?
+	r1.RectangleMethod();
+
+What does casting do?
+Does instanceof check the type of the reference or the class of the object that the reference points to?
+
+- Abstract classes -
+In what situation would you need an abstract class?
+Given an abstract class, MyAbstractClass, will the following code run?
+	MyAbstractClass cl = new MyAbstractClass();
+If a subclass inherits from an abstract class, what code must it contain to avoid a compiler error?
+In what situation would you need an interface instead of an abstract class?
+In what situation would you need an abstract class instead of an interface?
+
+- Lists -
+What is a generic? Why might you want to use one?
+When you define a class, how do you indicate that it is a generic?
+What were some of the methods that we decided we wanted to implement in a list ADT?
