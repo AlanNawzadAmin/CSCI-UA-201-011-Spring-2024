@@ -33,3 +33,9 @@ Reading: First part of Chapter 7.2, Chapter 3.2.
 Single and Doubly LinkedLists.
 
 Reading: Chapter 3.2, 3.4.
+
+### Section 2
+
+LinkedList practice.
+
+In textbook: code fragments 3.19. Qs 3.5, 6, 9, 12, 17, 18, 25, 26, 27, 28
