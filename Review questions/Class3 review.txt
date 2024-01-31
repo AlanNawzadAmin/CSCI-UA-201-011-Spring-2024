@@ -1,0 +1,15 @@
+
+- ArrayLists -
+What were the methods we implemented for ArrayList?
+Try and write out the method addFirst in your notebook.
+If an ArrayList has size n, roughly how many computations must it perform in addFirst? How about in addLast?
+What were the issues with this implementation of GoodList?
+
+- LinkedLists -
+Write out the Node class in your notebook -- what are its methods and attributes?
+Try and write out the method addFirst in your notebook.
+What attributes does a LinkedList have?
+If a LinkedList has size n, roughly how many computations must it perform in addFirst? How about in addLast?
+If a LinkedList has size n, roughly how many computations must it perform in getAtIndex in the worst case?
+If a LinkedList has size n, roughly much compute does it take to get the second-to-last node in a linked list?
+What does this mean about how much compute it would take to perform removeLast in a Linked list?
