@@ -39,3 +39,15 @@ Reading: Chapter 3.2, 3.4.
 LinkedList practice.
 
 In textbook: code fragments 3.19. Qs 3.5, 6, 9, 12, 17, 18, 25, 26, 27, 28
+
+### Class 5, Feb 5
+
+Worst case complexity algorithmic analysis. Search algorithms
+
+Reading: Chapter 4.1-4.3, 5.1.3
+
+### Class 6, Feb 7
+
+Stacks and Queues.
+
+Reading: Chapter 6
