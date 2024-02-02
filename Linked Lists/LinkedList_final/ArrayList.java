@@ -43,6 +43,16 @@ public class ArrayList<E> implements GoodList<E>{
 		size++;
 	}
 	
+	public boolean search(E element){
+		for (int i=0; i< size; i++) {
+			if (getAtIndex(i) == element) {
+				return true;
+			}
+		}
+		return false;
+	}
+	
+	
 	public static void main(String [] args) {
 		ArrayList<Integer> list = new ArrayList();
 		list.addLast(3);

@@ -62,6 +62,15 @@ public class LinkedList<E> {
 		return current_node.getElement();
 	}
 	
+	public boolean search(E element){
+		for (int i=0; i< size; i++) {
+			if (getAtIndex(i) == element) {
+				return true;
+			}
+		}
+		return false;
+	}
+	
 //	public E removeLast()
 	
 	public static void main(String [] args) {
@@ -70,5 +79,6 @@ public class LinkedList<E> {
 		list.addLast(2);
 		list.addLast(1);
 		System.out.println(list.getAtIndex(0));
+		System.out.println(list.search(4));
 	}
 }
