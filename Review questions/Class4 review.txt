@@ -1,0 +1,10 @@
+
+- LinkedLists -
+What was the issue with SinglyLinkedList that DoublyLinkedList solves?
+Write out the Node class in DoublyLinkedList in your notebook -- what are its methods and attributes?
+Draw a diagram of the steps in E remove(Node<E> node) and void addBetween(E e, Node<E> predecessor, Node<E> successor).
+
+-- Algorithmic Analysis --
+In this house we study worst-case, asymptotic, computational complexity. What might we study instead of worst-case complexity? What might we study instead of asymptotic complexity? What might we study instead of computational complexity? 
+What does f(n) = O(g(n)) mean?
+Name a method that is O(1). Name a method that is O(n).
