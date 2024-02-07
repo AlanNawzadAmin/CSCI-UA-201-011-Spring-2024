@@ -1,4 +1,4 @@
-package StackQueues_final;
+package StackQueues;
 
 public interface Stack<E> {
 	public abstract E pop();

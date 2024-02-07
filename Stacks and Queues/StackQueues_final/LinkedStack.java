@@ -1,7 +1,7 @@
 package StackQueues_final;
 import LinkedList_final.LinkedList;
 
-public class LinkedStack<E> extends LinkedList<E> implements Stack<E>{
+public class LinkedStack<E> implements Stack<E>{
 	private LinkedList<E> list;
 	
 	public LinkedStack(){
@@ -13,6 +13,10 @@ public class LinkedStack<E> extends LinkedList<E> implements Stack<E>{
 	}
 	public void push(E element) {
 		list.addFirst(element);
+	}
+	
+	public int size() {
+		return list.size();
 	}
 	
 	public static void main(String [] args) {
