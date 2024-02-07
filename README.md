@@ -42,12 +42,32 @@ In textbook: code fragments 3.19. Qs 3.5, 6, 9, 12, 17, 18, 25, 26, 27, 28
 
 ### Class 5, Feb 5
 
-Worst case complexity algorithmic analysis. Search algorithms
+Worst case complexity algorithmic analysis. Search algorithms. Started Stacks and Queues.
 
 Reading: Chapter 4.1-4.3, 5.1.3
 
 ### Class 6, Feb 7
 
-Stacks and Queues.
+Examples of stack applications. Started recursion.
 
-Reading: Chapter 6
+Reading: Chapter 6 up to and including 6.2.3, but not including 6.2.2. Chapter 5.1, 5.2
+
+### Section 3
+
+Algorithmic analysis, stacks, recursion.
+
+In textbook: Uniqness problem, Qs 4.2, 3, 6, 8-19, 22-24, 29-32, 45, 54, 56; 6.1, 3-5, 7, 9, 17, 19, 21, 23, 24; and 5.1, 2, 7, 8, 11, 15-22, 24
+
+### Class 7, Feb 12
+
+Recursion, Trees definition, implementation, calculating height and depth, 
+
+Reading: Chapter 5, 8.1, 8.3
+
+### Class 8, Feb 7
+
+Traversals and Binary trees.
+
+Reading: Chapter 8.2, 8.4
+
+
