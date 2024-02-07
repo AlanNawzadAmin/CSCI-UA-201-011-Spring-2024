@@ -1,0 +1,21 @@
+
+-- Algorithmic Analysis --
+What does f(n) = O(g(n)) mean?
+Name a method that is O(1), O(log(n)), O(n), and O(n^2).
+
+-- Search --
+How did regular and binary search work?
+What assumption does binary search make about the list it is searching?
+Convince yourself that when n is the size of the list, binary search has asymptotic worst case computational complexity O(log(n)).
+What is the asymptotic BEST case computational complexity of search and binarySearch?
+Consider the code:
+
+	public boolean search(Integer element){
+		found = false
+		for (int i=0; i< size; i++) {
+			found = found | getAtIndex(i) == element;
+		}
+		return found;
+	}
+
+What is this code doing? What are its asymptotic worst and best case computational complexities?
