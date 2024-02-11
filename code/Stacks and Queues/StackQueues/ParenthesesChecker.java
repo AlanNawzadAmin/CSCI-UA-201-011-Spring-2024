@@ -3,7 +3,7 @@ package StackQueues;
 public class ParenthesesChecker {
 	public static boolean check(String string) {
 		Stack<Character> stack = new LinkedStack<Character>();
-		for (int i=0; i<string.length(); i++) {
+		for (int i=0; i<string.length();i++) {
 			char character = string.charAt(i);
 			if (character == '(') {
 				stack.push(character);
@@ -24,7 +24,7 @@ public class ParenthesesChecker {
 	}
 	
 	public static void main(String[] args) {
-		String brakets = "())(()";
+		String brakets = "(())()";
 		System.out.println(ParenthesesChecker.check(brakets));
 	}
 }

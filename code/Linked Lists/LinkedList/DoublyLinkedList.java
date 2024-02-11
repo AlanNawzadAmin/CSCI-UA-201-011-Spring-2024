@@ -1,4 +1,6 @@
-package LinkedList_final;
+package LinkedList;
+
+import LinkedList_final.LinkedList.Node;
 
 public class DoublyLinkedList<E> {
 	private static class Node<E> {
@@ -62,6 +64,25 @@ public class DoublyLinkedList<E> {
 		successor.setPrev(predecessor);
 		size--;
 		return node.getElement( );
+	}
+	
+	public E getAtIndex(int index) {
+		if (index >= size)
+				return null;
+		Node<E> current_node = header;
+		for (int i=0; i<index+1; i++) {
+			current_node = current_node.getNext();
+		}
+		return current_node.getElement();
+	}
+
+	public boolean search(E element){
+		for (int i=0; i< size; i++) {
+			if (getAtIndex(i) == element) {
+				return true;
+			}
+		}
+		return false;
 	}
 	
 	public static void main(String [] args) {

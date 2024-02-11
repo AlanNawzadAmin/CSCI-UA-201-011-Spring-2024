@@ -1,4 +1,4 @@
-package LinkedList_final;
+package LinkedList;
 
 public class IntegerArrayList{
 	public static int MAX_SIZE = 1000;
@@ -52,14 +52,21 @@ public class IntegerArrayList{
 		return false;
 	}
 	
-	public boolean binarySearch(int element){
+	public boolean binarySearch(Integer element){
+//		assumes list is sorted
 		int high = size-1;
 		int low = 0;
 		while (low <= high) {
 			int mid = (low + high) / 2;
-			if (element == array[mid]) return true;
-			else if (element < array[mid]) {high = mid - 1;}
-			else {low = mid + 1;}
+			if (array[mid] == element) {
+				return true;
+			}
+			else if (element < array[mid]) {
+				high = mid -1;
+			}
+			else {
+				low = mid + 1;
+			}
 		}
 		return false;
 	}

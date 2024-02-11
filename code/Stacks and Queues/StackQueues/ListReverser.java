@@ -10,6 +10,7 @@ public class ListReverser{
 			array[i] = stack.pop();
 		}
 	}
+	
 	public static void main(String[] args) {
 		Integer[] array = new Integer[20];
 		for (int i=0; i<array.length; i++) {
