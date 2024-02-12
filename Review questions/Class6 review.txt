@@ -1,0 +1,12 @@
+
+-- Algorithmic Analysis --
+What does f(n) = O(g(n)) mean?
+Name a method that is O(1), O(log(n)), O(n), and O(n^2).
+
+
+-- Stacks and Queues -- 
+What's the difference between a stack and a queue?
+How can you implement these ADTs?
+
+-- Search --
+Write out the recursive method for binary search. Write out the argument that the complexity is O(log(n))
