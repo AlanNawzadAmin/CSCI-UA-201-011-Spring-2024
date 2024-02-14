@@ -68,19 +68,47 @@ public class LinkedTree<E> implements Tree<E>{
 		return h;
 	}
 	
+	private boolean depthFirstSearch(E element){
+		Stack<Position<E>> stack = new LinkedStack<Position<E>>();
+		stack.push(root);
+		while (stack.size() > 0) {
+			Position<E> next_pos = stack.pop();
+			if (next_pos.getElement() == element) return true;
+			GoodList<Position<E>> ch = children(next_pos);
+			for (int j=0; j<ch.size(); j++) {
+				stack.push(ch.getAtIndex(j));
+			}
+		}
+		return false;
+	}
+	
+	private boolean breadthFirstSearch(E element){
+		Queue<Position<E>> queue = new LinkedQueue<Position<E>>();
+		queue.enqueue(root);
+		while (queue.size() > 0) {
+			Position<E> next_pos = queue.dequeue();
+			if (next_pos.getElement() == element) return true;
+			GoodList<Position<E>> ch = children(next_pos);
+			for (int j=0; j<ch.size(); j++) {
+				queue.enqueue(ch.getAtIndex(j));
+			}
+		}
+		return false;
+	}
+	
 //	Using recursion
-	private GoodList<Position<E>> inOrderTraversal(Position<E> p, GoodList<Position<E>> list){
+	private GoodList<Position<E>> positionsRecursive(Position<E> p, GoodList<Position<E>> list){
 		list.addLast(p);
 		GoodList<Position<E>> children = children(p);
 		for (int i=0; i<children.size(); i++) {
-			inOrderTraversal(children.getAtIndex(i), list);
+			positionsRecursive(children.getAtIndex(i), list);
 		}
 		return list;
 	}
 	
-	private GoodList<Position<E>> inOrderTraversal(Position<E> p){
+	private GoodList<Position<E>> positionsRecursive(Position<E> p){
 		GoodList<Position<E>> list = new DoublyLinkedList<Position<E>>();
-		return inOrderTraversal(p, list);
+		return positionsRecursive(p, list);
 	}
 	
 //	Using stacks
@@ -97,34 +125,6 @@ public class LinkedTree<E> implements Tree<E>{
 			}
 		}
 		return pos;
-	}
-	
-	private boolean breadthFirstSearch(E element){
-		Stack<Position<E>> stack = new LinkedStack<Position<E>>();
-		stack.push(root);
-		while (stack.size() > 0) {
-			Position<E> next_pos = stack.pop();
-			if (next_pos.getElement() == element) return true;
-			GoodList<Position<E>> ch = children(next_pos);
-			for (int j=0; j<ch.size(); j++) {
-				stack.push(ch.getAtIndex(j));
-			}
-		}
-		return false;
-	}
-	
-	private boolean depthFirstSearch(E element){
-		Queue<Position<E>> queue = new LinkedQueue<Position<E>>();
-		queue.enqueue(root);
-		while (queue.size() > 0) {
-			Position<E> next_pos = queue.dequeue();
-			if (next_pos.getElement() == element) return true;
-			GoodList<Position<E>> ch = children(next_pos);
-			for (int j=0; j<ch.size(); j++) {
-				queue.enqueue(ch.getAtIndex(j));
-			}
-		}
-		return false;
 	}
 	
 	public GoodList<Position<E>> positions(){
