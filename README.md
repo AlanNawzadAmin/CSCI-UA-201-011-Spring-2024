@@ -82,18 +82,14 @@ More on recursion, and tree methods.
 
 In textbook: Qs from chapter 5 last week and (Ignore questions about traversals) 8.1, 2, 4, 5, 11, 12, 13, 18, 19, 20, 22, 23, 27, 28 (hint: use an auxiliary variable in a recursive method), 32, 37, 42, 45, 55, 58.
 
-### Class 9, Feb 19
+### Feb 19 -- President's day
 
 #### Asignment 2 (Adding and removing from linked trees) due
+
+### Class 9, Feb 21
 
 Arithmatic trees, Traversals, Map ADT
 
 Reading: Chapter 8.2, 8.4, 10.1
-
-### Class 10, Feb 7
-
-Hash tables.
-
-Reading: Chapter 10.2
 
 
