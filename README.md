@@ -84,9 +84,9 @@ In textbook: Qs from chapter 5 last week and (Ignore questions about traversals)
 
 ### Feb 19 -- President's day
 
-#### Asignment 2 (Adding and removing from linked trees) due
-
 ### Class 9, Feb 21
+
+#### Asignment 2 (Adding and removing from linked trees) due
 
 Arithmatic trees, Traversals, Map ADT
 
