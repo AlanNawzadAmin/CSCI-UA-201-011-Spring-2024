@@ -92,4 +92,16 @@ Arithmatic trees, Traversals, Map ADT
 
 Reading: Chapter 8.2, 8.4, 10.1
 
+### Class 10, Feb 26
+
+Map ADT, Unsorted list implementation, Hash functions, compression functions
+
+Reading: Chapter 10.1, 10.2
+
+### Class 11, Feb 28
+
+Hash resolutions, start Binary search trees
+
+Reading: 10.2, 11.1
+
 
