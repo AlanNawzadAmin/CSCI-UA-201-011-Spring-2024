@@ -1,0 +1,8 @@
+
+-- Traversals --
+What are the recursive relations we used to define the three traversals?
+What order would the three traversals and the two search algorithms visit the nodes of the tree on the boars?
+
+-- Map ADT --
+Give two examples of data that might be put into a map.
+What are the methods of map?
