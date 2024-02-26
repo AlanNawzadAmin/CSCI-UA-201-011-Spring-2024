@@ -100,7 +100,7 @@ Reading: Chapter 10.1, 10.2
 
 ### Class 11, Feb 28
 
-Hash resolutions, start Binary search trees
+Collision resolutions, start Binary search trees
 
 Reading: 10.2, 11.1
 
