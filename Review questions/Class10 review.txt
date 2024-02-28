@@ -1,0 +1,6 @@
+
+-- Map ADT --
+Give two examples of data that might be put into a map.
+What are the methods of map?
+Describe get, put and remove in our implementation of UnsortedMap. What is the complexity of these methods?
+What is a hash code? A compression function?
