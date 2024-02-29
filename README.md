@@ -98,7 +98,7 @@ Reading: Chapter 8.2, 8.4, 10.1
 
 Traversals and more on tree methods.
 
-In textbook: Qs 8.1, 2, 4, 5, 11, 12, 13, 18, 19, 20, 22, 23, 27, 28 (hint: use an auxiliary variable in a recursive method), 32, 37, 42, 45, 55, 58.
+In textbook: All Qs from chapter 8 last week.
 
 ### Class 10, Feb 26
 
