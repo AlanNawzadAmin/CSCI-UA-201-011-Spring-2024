@@ -92,6 +92,14 @@ Arithmatic trees, Traversals, Map ADT
 
 Reading: Chapter 8.2, 8.4, 10.1
 
+### Section 5
+
+#### Quiz 3 (Traversals)
+
+Traversals and more on tree methods.
+
+In textbook: All Qs from chapter 8 last week.
+
 ### Class 10, Feb 26
 
 Map ADT, Unsorted list implementation, Hash functions, compression functions
