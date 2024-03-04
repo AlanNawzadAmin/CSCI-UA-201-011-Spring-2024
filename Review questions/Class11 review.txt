@@ -1,0 +1,12 @@
+
+-- Hash Maps --
+What is a hash code? A compression function?
+Describe good hash codes for the types int, char, double, and string.
+Why do we have to resolve collisions in a hash map?
+Describe separate chaining and open addressing with linear probing.
+
+-- Binary search trees --
+What is the requirement on the key class for a map to be implementable as a binary search tree.
+What is the complexity of get, put, and remove in an Unsorted map?
+What binary search replaces the linear search in Unsorted map with ___ search.
+What is the ideal complexity of get, put, and remove in a binary search tree?
