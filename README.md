@@ -112,4 +112,32 @@ Collision resolutions, start Binary search trees
 
 Reading: 10.2, 11.1
 
+### Section 6, March 1
+
+#### Quiz 4 (Maps)
+
+Maps and hash maps.
+
+In textbook: Qs 10.1, 3, 6, 7, 10, 11, 33, 41, 61.
+
+### Class 12, March 4
+
+Getting, adding and removing from BSTs. Balanced trees.
+
+Reading: 11.1, 11.2
+
+### Class 13, March 6
+
+Adding and removing from AVL trees
+
+Reading: 11.3.
+
+### Section 7, March 8
+#### Quiz 4 (BST addition and deletion)
+
+Review for midterm
+
+### Class 14, March 11
+
+#### Midterm
 
