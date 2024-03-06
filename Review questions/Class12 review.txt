@@ -1,0 +1,6 @@
+
+-- Binary search trees --
+What is the definition of a binary search tree?
+How do you perform get in a BST?
+What is a balanced tree?
+Perform put(24, V), remove(34), put(12), remove(6) for thee tree on the board.
