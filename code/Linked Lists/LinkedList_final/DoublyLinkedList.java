@@ -65,6 +65,16 @@ public class DoublyLinkedList<E> implements GoodList<E>{
 		return node.getElement( );
 	}
 	
+	public E removeAtIndex(int index) {
+		if (index >= size)
+			return null;
+		Node<E> current_node = header;
+		for (int i=0; i<index+1; i++) {
+			current_node = current_node.getNext();
+		}
+		return remove(current_node);
+	}
+	
 	public E getAtIndex(int index) {
 		if (index >= size)
 				return null;
