@@ -1,0 +1,5 @@
+
+-- Binary search trees --
+What is the definition of a binary search tree?
+What is the definition of a balanced tree?
+What are the steps to perform, get, put, remove for a regular BST and an AVL tree?
