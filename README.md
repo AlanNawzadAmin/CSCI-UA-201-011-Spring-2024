@@ -133,11 +133,28 @@ Adding and removing from AVL trees
 Reading: 11.3.
 
 ### Section 7, March 8
-#### Quiz 4 (BST addition and deletion)
+#### Quiz 5 (BST addition and deletion)
 
 Review for midterm
+
+In textbook: Qs 11.1, 2, 3, 4, 5, 8, 9, 29, 33
 
 ### Class 14, March 11
 
 #### Midterm
+
+#### Assignment 4 (Hash Maps) due
+
+### Class 15, March 13
+
+Removing from AVL trees. Adding to (a, b) trees.
+
+Reading: 11.5, 15.2, 15.3
+
+### Section 8, March 15
+#### Quiz 6 (AVL deletion, (a, b) tree addition)
+Bit on AVL trees and (a, b) trees.
+Midterm recap
+
+In textbook: 11.17, 19, 21, 22a, 47
 
