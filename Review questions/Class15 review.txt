@@ -1,0 +1,9 @@
+
+-- Recursion -- 
+8.28: The path length of a tree T is the sum of the depths of all positions in T. Describe a linear-time method for computing the path length of a tree T .
+
+-- Binary search trees --
+What is a multiway search tree?
+How do you get in a multiway search tree?
+What is an (a, b) tree?
+How do you add in an (a, b) tree?
