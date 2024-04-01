@@ -158,3 +158,32 @@ Midterm recap
 
 In textbook: 11.17, 19, 21, 22a, 47
 
+### Class 16, March 25
+
+Midterm review -- recursion with auxillary history variables. (a, b) tree recap.
+
+Reading: 11.5, 15.2, 15.3
+
+### Class 17, March 27
+
+Recursion with auxillary varibles in trees. Removing from (a, b) trees. Bit on Splay trees.
+
+Reading: 11.5, 15.2, 15.3
+
+### Section 9, March 29
+
+#### Quiz 7 (AVL code)
+Recursion with auxillary varibles in trees.
+
+### Class 16, March 25
+
+Quadratic sorts, recap of PriorityQueues.
+
+Reading: 9.1, 9.2, 9.4.1, [bubble sort](https://en.wikipedia.org/wiki/Bubble_sort), [bogo sort](https://en.wikipedia.org/wiki/Bogosort)
+
+### Class 17, March 27
+
+Mergesort. Heaps.
+
+Reading: 9.3.1-3, 9.4.2, 12.1
+
