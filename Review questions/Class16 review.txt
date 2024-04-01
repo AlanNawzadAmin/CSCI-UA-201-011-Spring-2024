@@ -1,0 +1,11 @@
+
+-- Recursion -- 
+A) int SumHeightsSearch(E element) is a method in Tree that returns the sums of the heights of every instance of element in the tree. Please write a recursive implementation of SumHeightsSearch that runs in O(n).
+B) boolean DoubleSearch(List<E> Elements) is a method in Tree that checks if the the list Elements exists in the tree, that is, Elements[0] is the childe of Elements[1], which is the child of Elements[2], etc.... Please write a recursive implementation of SumHeightsSearch whose runtime is O(n) and asymptotically independent of the size of the list (assuming O(1) call time to the list). The idea by the way is to have an auxiliary variable in your recursion which is # of matches.
+
+-- Search trees --
+What is a multiway search tree?
+How do you get in a multiway search tree?
+What is an (a, b) tree?
+How do you add in an (a, b) tree?
+How do you remove in an (a, b) tree?
