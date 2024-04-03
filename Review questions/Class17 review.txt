@@ -1,0 +1,5 @@
+
+-- Sorting -- 
+Describe an algorithm to check if a list is sorted. What is the complexity of this algorithm?
+What are the complexities of insertion sort, selection sort, and bubble sort?
+Say we wish to sort 3, 4, 6, 2, 1, 5. Write out the list after each sweep of bubble sort. Write out the list after each addition in insertion sort. Write the list after each removeMin in selection sort.
