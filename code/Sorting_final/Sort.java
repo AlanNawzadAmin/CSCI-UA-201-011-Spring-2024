@@ -54,6 +54,34 @@ public class Sort {
 			}
 		}
 	}
+	
+	public static int[] merge(int[] array1, int[] array2) {
+		int combineLength = array1.length + array2.length;
+		int[] combinedArray = new int[combineLength];
+		int index1 = 0;
+		int index2 = 0;
+		for(int i=0; i < combineLength; i++) {
+			if(index1 >= array1.length) {
+				combinedArray[i] = array2[index2];
+				index2++;
+			}
+			else if(index2 >= array2.length){
+				combinedArray[i] = array1[index1];
+				index1++;
+			}
+			else {
+				if (array1[index1] > array2[index2]) {
+					combinedArray[i] = array2[index2];
+					index2++;
+				}
+				else {
+					combinedArray[i] = array1[index1];
+					index1++;
+				}
+			}
+		}
+		return combinedArray;
+	}
 
 	public static void main(String[] args) {
 		int[] intarray;
@@ -63,6 +91,16 @@ public class Sort {
 		selectionSort(intarray);
 		insertionSort(intarray);
 		for(int i: intarray) {
+			System.out.println(i);
+		}
+		
+		int[] intarray1 = new int[]{5, 4, 6, 3};
+		int[] intarray2 = new int[]{7, 2, 1, 8};
+		insertionSort(intarray1);
+		insertionSort(intarray2);
+		int[] combArray = merge(intarray1, intarray2);
+		System.out.println(isSorted(combArray));
+		for(int i: combArray) {
 			System.out.println(i);
 		}
 	}
