@@ -173,17 +173,36 @@ Reading: 11.5, 15.2, 15.3
 ### Section 9, March 29
 
 #### Quiz 7 (AVL code)
-Recursion with auxillary varibles in trees.
+Recursion with auxillary varibles in trees. (Questions in Review 16)
 
-### Class 16, March 25
+### Class 16, April 1
 
 Quadratic sorts, recap of PriorityQueues.
 
 Reading: 9.1, 9.2, 9.4.1, [bubble sort](https://en.wikipedia.org/wiki/Bubble_sort), [bogo sort](https://en.wikipedia.org/wiki/Bogosort)
 
-### Class 17, March 27
+### Class 17, April 3
 
-Mergesort. Heaps.
+O(nlog n) efficiecy proof. Mergesort.
 
-Reading: 9.3.1-3, 9.4.2, 12.1
+Reading: 12.1, 12.3.1
+
+### Section 10, April 5
+
+#### Quiz 8 (Sorting)
+Sorting
+
+In textbook: 12.6, 7, 26 -- do these questions for all the sorting algorithms we have covered
+
+### Class 18, April 8
+
+Heaps and heapsort.
+
+Reading: 9.3.1-3, 9.4.2
+
+### Class 19, April 10
+
+Quicksort, bucketsort, and comparison of sorting algorithms.
+
+Reading: 12.2, 12.3.2, 12.4
 
