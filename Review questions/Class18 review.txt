@@ -1,0 +1,5 @@
+
+-- Sorting -- 
+What are the complexities of insertion sort, selection sort, bubble sort, and merge sort?
+Write the recursive definition of merge sort.
+If you have an implementation of a priority queue how can you use it to sort a list? If adding and removeMin to a priority queue of n elements are O(log(n)), what is the complexity of sorting a list of n elements?
