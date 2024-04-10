@@ -1,0 +1,5 @@
+
+-- Sorting -- 
+What are the complexities of insertion sort, selection sort, bubble sort, merge sort, and heap sort?
+Sort the list 5, 8, 7, 2, 4, 3, 9, 1, 6 by adding it ad removing it from a heap.
+Write the recursive algorithm for merge sort.
