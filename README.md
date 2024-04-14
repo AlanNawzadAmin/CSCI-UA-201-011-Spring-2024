@@ -196,6 +196,8 @@ In textbook: 12.6, 7, 26 -- do these questions for all the sorting algorithms we
 
 ### Class 18, April 8
 
+#### Assignment 5 (Counting with BSTs) due
+
 Heaps and heapsort.
 
 Reading: 9.3.1-3, 9.4.2
@@ -205,4 +207,25 @@ Reading: 9.3.1-3, 9.4.2
 Quicksort, bucketsort, and comparison of sorting algorithms.
 
 Reading: 12.2, 12.3.2, 12.4
+
+### Section 10, April 12
+
+#### Quiz 8 (Tree sort)
+Heap and Quick sort.
+
+In Textbook: 9.3, 4, 10, 11, 12, 16, 17, 19, 20, 21, 23, 30, 34; 12.9, 10, 18, 20-23, 26, 35-37, 39, 42, 43, 46, 47
+
+### Class 20, April 15
+
+#### Assignment 6 (Radix Sort) due
+
+Graph ADT and implementations.
+
+Reading: 14.1, 2
+
+### Class 21, April 17
+
+Searching in graphs.
+
+Reading: 14.3
 
