@@ -34,6 +34,15 @@ public class ArrayList<E> implements GoodList<E>{
 		size--;
 		return remove;
 	}
+	
+	public E removeAtIndex(int i) {
+		E remove = array[i];
+		for (int j=i; j<size; j++) {
+			array[j] = array[j+1];
+		}
+		size--;
+		return remove;
+	}
 
 	public void addFirst(E element) {
 		for (int i=size; i>0; i--) {
