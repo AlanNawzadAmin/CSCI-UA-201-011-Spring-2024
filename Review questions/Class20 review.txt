@@ -1,0 +1,6 @@
+
+-- Sorting -- 
+Write out the recursive form for quick sort.
+Why is the worst case so much better for random quick sort than for deterministic quick sort?
+What is the complexity of bucket sort?
+What assumption in out theorem of the O(n log n) lower bound does bucket sort violate?
