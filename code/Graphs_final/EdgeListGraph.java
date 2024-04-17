@@ -1,5 +1,9 @@
 package Graphs_final;
 import LinkedList_final.GoodList;
+import StackQueues_final.LinkedStack;
+import StackQueues_final.Stack;
+import Maps_final.UnsortedMap;
+import Maps_final.Map;
 import LinkedList_final.ArrayList;
 
 public class EdgeListGraph<V, E> {
@@ -130,6 +134,24 @@ public class EdgeListGraph<V, E> {
 	}
 	int inDegree(Vertex<V> v){
 		return incomingEdges(v).size();
+	}
+	
+	private boolean depthFirstSearch(E element){
+		Stack<Vertex<V>> stack = new LinkedStack<Vertex<V>>();
+		Map<Vertex<V>, Object> seen = new UnsortedMap<Vertex<V>, Object>();
+		stack.push(vertices.getAtIndex(0));
+		while (stack.size() > 0) {
+			Vertex<V> next_pos = stack.pop();
+			if (next_pos.getElement() == element) return true;
+			GoodList<Edge<E>> ch = outgoingEdges(next_pos);
+			for (int j=0; j<ch.size(); j++) {
+				Vertex<V> next_vertex = ch.getAtIndex(j).getEndpoints()[1];
+				if (seen.put(next_vertex, next_vertex) == null) {
+					stack.push(next_vertex);
+				}
+			}
+		}
+		return false;
 	}
 	
 }

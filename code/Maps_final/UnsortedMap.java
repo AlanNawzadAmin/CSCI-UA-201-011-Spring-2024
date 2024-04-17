@@ -3,7 +3,7 @@ package Maps_final;
 import LinkedList_final.GoodList;
 import LinkedList_final.DoublyLinkedList;
 
-public class UnsortedMap<K, V> {
+public class UnsortedMap<K, V> implements Map<K, V>{
 	private int size;
 	private GoodList<Entry<K, V>> entrylist;
 	private class UnsortEntry<K, V> implements Entry<K, V>{
@@ -22,12 +22,12 @@ public class UnsortedMap<K, V> {
 		entrylist = new DoublyLinkedList<Entry<K, V>>();
 	}
 	
-	int size() {return size;};
-	boolean isEmpty() { return size() == 0;};
-	GoodList<Entry<K,V>> entrySet(){
+	public int size() {return size;};
+	public boolean isEmpty() { return size() == 0;};
+	public GoodList<Entry<K,V>> entrySet(){
 		return entrylist;
 	};
-	GoodList<K> keySet(){
+	public GoodList<K> keySet(){
 		GoodList<K> keylist = new DoublyLinkedList<K>();
 		for (int i = 0; i< entrylist.size(); i++) {
 			keylist.addLast(entrylist.getAtIndex(i).getKey());
@@ -35,7 +35,7 @@ public class UnsortedMap<K, V> {
 		return keylist;
 		}
 	
-	GoodList<V> values(){
+	public GoodList<V> values(){
 		GoodList<V> valuelist = new DoublyLinkedList<V>();
 		for (int i = 0; i< entrylist.size(); i++) {
 			valuelist.addLast(entrylist.getAtIndex(i).getValue());
@@ -43,7 +43,7 @@ public class UnsortedMap<K, V> {
 		return valuelist;
 	}
 	
-	V put(K key, V value) {
+	public V put(K key, V value) {
 		V old_val = get(key);
 		if (old_val == null) {
 			entrylist.addLast(new UnsortEntry<K, V>(key, value));
@@ -57,7 +57,7 @@ public class UnsortedMap<K, V> {
 	};
 
 	
-	V get(K key) {
+	public V get(K key) {
 		for (int i = 0; i< entrylist.size(); i++) {
 			Entry<K, V> entry = entrylist.getAtIndex(i);
 			if (entry.getKey() == key) return entry.getValue();
@@ -65,7 +65,7 @@ public class UnsortedMap<K, V> {
 		return null;
 	};
 
-	V remove(K key) {
+	public V remove(K key) {
 		for (int i = 0; i< entrylist.size(); i++) {
 			Entry<K, V> entry = entrylist.getAtIndex(i);
 			if (entry.getKey() == key) {

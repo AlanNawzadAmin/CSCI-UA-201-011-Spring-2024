@@ -1,0 +1,5 @@
+
+-- Graphs --
+What are vertices, edges? What is an in degree and out degree? What are incoming and outgoing edges?
+What are the methods of out graph ADT, how about the vertex and edge ADTs?
+What are the three / four implementations of graphs? What are their strengths and weaknesses?
