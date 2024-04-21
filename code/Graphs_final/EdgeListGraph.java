@@ -2,6 +2,8 @@ package Graphs_final;
 import LinkedList_final.GoodList;
 import StackQueues_final.LinkedStack;
 import StackQueues_final.Stack;
+import StackQueues_final.LinkedQueue;
+import StackQueues_final.Queue;
 import Maps_final.UnsortedMap;
 import Maps_final.Map;
 import LinkedList_final.ArrayList;
@@ -38,12 +40,10 @@ public class EdgeListGraph<V, E> {
 	int n_edges;
 	
 	GoodList<Vertex<V>> vertices(){
-//		May include nulls
 		return vertices;
 	}
 
 	GoodList<Edge<E>> edges(){
-//		May include nulls
 		return edges;
 	}
 	
@@ -84,8 +84,10 @@ public class EdgeListGraph<V, E> {
 		Vertex<V>[] endpoints = e.getEndpoints();
 		if(v == endpoints[0]) {
 			return endpoints[1];
-		} else {
+		} else if (v == endpoints[1]) {
 			return endpoints[0];
+		} else {
+			return null;
 		}
 	}
 
@@ -112,6 +114,7 @@ public class EdgeListGraph<V, E> {
 				vertices.removeAtIndex(i);
 			}
 		}
+		n_vertices--;
 	}
 	
 	void removeEdge(Edge<E> e){
@@ -121,6 +124,7 @@ public class EdgeListGraph<V, E> {
 				edges.removeAtIndex(i);
 			}
 		}
+		n_edges--;
 	}
 		
 	int numVertices() {
@@ -136,7 +140,7 @@ public class EdgeListGraph<V, E> {
 		return incomingEdges(v).size();
 	}
 	
-	private boolean depthFirstSearch(E element){
+	public boolean depthFirstSearch(V element){
 		Stack<Vertex<V>> stack = new LinkedStack<Vertex<V>>();
 		Map<Vertex<V>, Object> seen = new UnsortedMap<Vertex<V>, Object>();
 		stack.push(vertices.getAtIndex(0));
@@ -146,12 +150,50 @@ public class EdgeListGraph<V, E> {
 			GoodList<Edge<E>> ch = outgoingEdges(next_pos);
 			for (int j=0; j<ch.size(); j++) {
 				Vertex<V> next_vertex = ch.getAtIndex(j).getEndpoints()[1];
-				if (seen.put(next_vertex, next_vertex) == null) {
+				if (seen.put(next_vertex, 0) == null) {
 					stack.push(next_vertex);
 				}
 			}
 		}
 		return false;
+	}
+	
+	private GoodList<Edge<E>> newListPlusOne(GoodList<Edge<E>> list, Edge<E> newEdge) {
+//		copy list
+		GoodList<Edge<E>> newList = new ArrayList<Edge<E>>();
+		for (int j=0; j<list.size(); j++) {
+			newList.addLast(list.getAtIndex(j));
+		}
+//		add next element
+		newList.addLast(newEdge);
+		return newList;
+	}
+	
+	public GoodList<Edge<E>> breadthFirstSearchPath(V element){
+		GoodList<Edge<E>> path = new ArrayList<Edge<E>>();
+		Map<Vertex<V>, Object> seen = new UnsortedMap<Vertex<V>, Object>();
+		
+		Queue<Object[]> queue = new LinkedQueue<Object[]>();
+		queue.enqueue(new Object[] {vertices.getAtIndex(0), path});
+		while (queue.size() > 0) {
+//			dequeue and unpack
+			Object[] posAndPath = queue.dequeue();
+			Vertex<V> next_pos = (Vertex<V>)(posAndPath[0]);
+			GoodList<Edge<E>> nextPath = (GoodList<Edge<E>>)(posAndPath[1]);
+//			check element
+			if (next_pos.getElement() == element) return nextPath;
+//			iterate through unseen neighbors
+			GoodList<Edge<E>> ch = outgoingEdges(next_pos);
+			for (int j=0; j<ch.size(); j++) {
+				Edge<E> next_edge = ch.getAtIndex(j);
+				Vertex<V> next_vertex = next_edge.getEndpoints()[1];
+				if (seen.put(next_vertex, 0) == null) {
+					GoodList<Edge<E>> new_path = newListPlusOne(nextPath, next_edge);
+					queue.enqueue(new Object[] {next_vertex, new_path});
+				}
+			}
+		}
+		return null;
 	}
 	
 }

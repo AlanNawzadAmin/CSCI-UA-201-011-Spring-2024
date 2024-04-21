@@ -2,7 +2,7 @@ package Graphs_final;
 import LinkedList_final.GoodList;
 
 public interface Graph<V, E> {
-	GoodList<Vertex<V>>vertices();
+	GoodList<Vertex<V>> vertices();
 	GoodList<Edge<E>> edges();
 	
 	GoodList<Edge<E>> outgoingEdges(Vertex<V> v);
