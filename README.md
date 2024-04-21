@@ -210,7 +210,7 @@ Reading: 12.2, 12.3.2, 12.4
 
 ### Section 10, April 12
 
-#### Quiz 8 (Tree sort)
+#### Quiz 9 (Tree sort)
 Heap and Quick sort.
 
 In Textbook: 9.3, 4, 10, 11, 12, 16, 17, 19, 20, 21, 23, 30, 34; 12.9, 10, 18, 20-23, 26, 35-37, 39, 42, 43, 46, 47
@@ -228,4 +228,27 @@ Reading: 14.1, 2
 Searching in graphs.
 
 Reading: 14.3
+
+### Section 11, April 19
+
+#### Quiz 10 (Graph implementations)
+
+Graph implementations.
+
+In Textbook: 14.1-11, 13, 38
+
+### Class 22, April 22
+
+#### Assignment 7 (Graph implementations) due
+
+More on searching in graphs, recursive backtracking
+
+Reading: 14.3
+
+### Class 23, April 24
+
+Shortest paths, directed acyclic graphs
+
+Reading: 14.5, 6
+
 
