@@ -1,4 +1,4 @@
 
 -- Graphs --
 What are the three / four implementations of graphs? What are their strengths and weaknesses?
-Write out the algorithm for breadth first search. Which graph implementation is best if you want to perform dfs efficiently?
+Write out the algorithm for depth first search. Which graph implementation is best if you want to perform dfs efficiently?

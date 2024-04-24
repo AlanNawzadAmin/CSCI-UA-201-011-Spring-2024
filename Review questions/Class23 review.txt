@@ -1,0 +1,6 @@
+
+-- Graphs --
+Write out the algorithm for depth first search. Which graph implementation is best if you want to perform dfs efficiently?
+How could you modify the dfs code to get all nodes in the connected component of a starting node?
+How could you modify the bfs code to get a shortest path from a starting node to a final node?
+How could you modify the dfs code to check if a starting node is inside a directed cycle?
