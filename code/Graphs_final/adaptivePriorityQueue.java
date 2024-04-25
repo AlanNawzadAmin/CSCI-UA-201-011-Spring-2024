@@ -1,4 +1,4 @@
-package Graphs_final;
+package Graphs;
 
 public interface adaptivePriorityQueue<E> {
 	int size();

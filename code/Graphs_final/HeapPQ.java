@@ -1,6 +1,6 @@
-package Graphs_final;
+package Graphs;
 
-import java.lang.Math;
+import Graphs_final.HeapPQ.entry;
 
 public class HeapPQ<E> implements adaptivePriorityQueue<E>{
 	static int MAX_HEIGHT = 4;
@@ -10,25 +10,37 @@ public class HeapPQ<E> implements adaptivePriorityQueue<E>{
 		E element;
 		double priority;
 		int index;
-		entry(double priority, E element){
+		entry(double priority, E element, int index){
 			this.priority = priority;
 			this.element = element;
+			this.index = index;
 		}
 		void setIndex(int j) {
 			index = j;
+		}
+		void setPriority(double priority) {
+			this.priority = priority;
 		}
 	}
 	
 	entry[] array;
 	int size = 0;
 	
+	public HeapPQ() {
+		array = (entry[])(new Object[MAX_SIZE]);
+	};
+	
 	public int size() {
 		return size;
 	}
 	
-	public HeapPQ() {
-		array = (entry[])(new Object[MAX_SIZE]);
-	};
+	private boolean isRoot(int index) {
+		return index == 0;
+	}
+	
+	private boolean isLeaf(int index) {
+		return 2 * index + 1 >= size;
+	}
 	
 	private void bubbleUp(int current_ind) {
 		boolean in_order = false;
@@ -74,19 +86,23 @@ public class HeapPQ<E> implements adaptivePriorityQueue<E>{
 	}
 	
 	public Object put(double priority, E element) {
-		array[size] = new entry(priority, element);
+		array[size] = new entry(priority, element, size);
 		int current_ind = size;
 		bubbleUp(current_ind);
 		size++;
 		return array[current_ind];
 	}
 	
-	private boolean isRoot(int index) {
-		return index == 0;
-	}
-	
-	private boolean isLeaf(int index) {
-		return 2 * index + 1 >= size;
+	public E removeMin() {
+		entry remove = array[0];
+		array[0] = array[size - 1];
+		array[0].setIndex(0);
+		array[size - 1] = null;
+		size--;
+		
+		int current_ind = 0;
+		bubbleDown(current_ind);
+		return remove.element;
 	}
 	
 	public void replaceKey(Object u, double key) {
@@ -101,16 +117,26 @@ public class HeapPQ<E> implements adaptivePriorityQueue<E>{
 		}
 	}
 	
-	public E removeMin() {
-		entry remove = array[0];
-		array[0] = array[size - 1];
-		array[size - 1] = null;
-		size--;
-		
-		int current_ind = 0;
-		bubbleDown(current_ind);
-		return remove.element;
-	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 }
-

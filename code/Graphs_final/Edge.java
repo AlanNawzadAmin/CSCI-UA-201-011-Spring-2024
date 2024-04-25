@@ -1,6 +1,6 @@
-package Graphs_final;
+package Graphs;
 
 public interface Edge<E> {
-	Vertex[] getEndpoints();
 	E getElement();
+	Vertex[] getEndpoints();
 }

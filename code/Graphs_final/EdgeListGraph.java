@@ -1,14 +1,16 @@
-package Graphs_final;
+package Graphs;
+import Graphs_final.Edge;
+import Graphs_final.Vertex;
+import LinkedList_final.ArrayList;
 import LinkedList_final.GoodList;
+import Maps_final.Map;
+import Maps_final.UnsortedMap;
 import StackQueues_final.LinkedStack;
 import StackQueues_final.Stack;
 import StackQueues_final.LinkedQueue;
 import StackQueues_final.Queue;
-import Maps_final.UnsortedMap;
-import Maps_final.Map;
-import LinkedList_final.ArrayList;
 
-public class EdgeListGraph<V, E> {
+public class EdgeListGraph<V, E>{
 	private class InnerVertex<V> implements Vertex<V>{
 		V element;
 		InnerVertex(V element){
@@ -18,7 +20,7 @@ public class EdgeListGraph<V, E> {
 			return element;
 		}
 	}
-
+	
 	private class InnerEdge<E> implements Edge<E>{
 		E element;
 		InnerVertex<V> endpoints[];
@@ -57,6 +59,7 @@ public class EdgeListGraph<V, E> {
 		}
 		return outgoing;
 	}
+	
 	GoodList<Edge<E>> incomingEdges(Vertex<V> v){
 		ArrayList<Edge<E>> incoming = new ArrayList<Edge<E>>();
 		for(int i=0; i< n_edges;i++) {
@@ -77,9 +80,11 @@ public class EdgeListGraph<V, E> {
 		}
 		return null;
 	}
+	
 	Vertex<V>[] endVertices(Edge<E> e){
 		return e.getEndpoints();
 	}
+	
 	Vertex<V> opposite(Vertex<V> v, Edge<E> e){
 		Vertex<V>[] endpoints = e.getEndpoints();
 		if(v == endpoints[0]) {
@@ -90,15 +95,27 @@ public class EdgeListGraph<V, E> {
 			return null;
 		}
 	}
-
+	
 	void insertVertex(V x) {
 		vertices.addLast(new InnerVertex<V>(x));
 		n_vertices++;
 	}
+	
 	void insertEdge(Vertex<V> from, Vertex<V> to, E x){
 		edges.addLast(new InnerEdge<E>(from, to, x));
 		n_edges++;
 	}
+	
+	void removeEdge(Edge<E> e){
+//		Can be made more efficient with a position list
+		for(int i=0; i<n_edges; i++) {
+			if(edges.getAtIndex(i) == e) {
+				edges.removeAtIndex(i);
+			}
+		}
+		n_edges--;
+	}
+	
 	void removeVertex(Vertex<V> v) {
 		GoodList<Edge<E>> outgoing = outgoingEdges(v);
 		GoodList<Edge<E>> incoming = incomingEdges(v);
@@ -117,16 +134,6 @@ public class EdgeListGraph<V, E> {
 		n_vertices--;
 	}
 	
-	void removeEdge(Edge<E> e){
-//		Can be made more efficient with a position list
-		for(int i=0; i<n_edges; i++) {
-			if(edges.getAtIndex(i) == e) {
-				edges.removeAtIndex(i);
-			}
-		}
-		n_edges--;
-	}
-		
 	int numVertices() {
 		return n_vertices;
 	}
@@ -140,16 +147,24 @@ public class EdgeListGraph<V, E> {
 		return incomingEdges(v).size();
 	}
 	
-	public boolean depthFirstSearch(V element){
+	private boolean depthFirstSearch(Vertex<V> end, Vertex<V> start){
 		Stack<Vertex<V>> stack = new LinkedStack<Vertex<V>>();
 		Map<Vertex<V>, Object> seen = new UnsortedMap<Vertex<V>, Object>();
-		stack.push(vertices.getAtIndex(0));
+		stack.push(start);
+		seen.put(start, 0);
 		while (stack.size() > 0) {
 			Vertex<V> next_pos = stack.pop();
-			if (next_pos.getElement() == element) return true;
+			if (next_pos == end) return true;
 			GoodList<Edge<E>> ch = outgoingEdges(next_pos);
 			for (int j=0; j<ch.size(); j++) {
 				Vertex<V> next_vertex = ch.getAtIndex(j).getEndpoints()[1];
+				if (seen.put(next_vertex, 0) == null) {
+					stack.push(next_vertex);
+				}
+			}
+			GoodList<Edge<E>> chi = incomingEdges(next_pos);
+			for (int j=0; j<chi.size(); j++) {
+				Vertex<V> next_vertex = chi.getAtIndex(j).getEndpoints()[0];
 				if (seen.put(next_vertex, 0) == null) {
 					stack.push(next_vertex);
 				}
@@ -169,19 +184,19 @@ public class EdgeListGraph<V, E> {
 		return newList;
 	}
 	
-	public GoodList<Edge<E>> breadthFirstSearchPath(V element){
-		GoodList<Edge<E>> path = new ArrayList<Edge<E>>();
-		Map<Vertex<V>, Object> seen = new UnsortedMap<Vertex<V>, Object>();
-		
+	private GoodList<Edge<E>> breadthFirstSearch(Vertex<V> end, Vertex<V> start){
 		Queue<Object[]> queue = new LinkedQueue<Object[]>();
-		queue.enqueue(new Object[] {vertices.getAtIndex(0), path});
+		queue.enqueue(new Object[] {start, new ArrayList<Edge<E>>()});
+		
+		Map<Vertex<V>, Object> seen = new UnsortedMap<Vertex<V>, Object>();
+		seen.put(start, 0);
 		while (queue.size() > 0) {
 //			dequeue and unpack
 			Object[] posAndPath = queue.dequeue();
 			Vertex<V> next_pos = (Vertex<V>)(posAndPath[0]);
 			GoodList<Edge<E>> nextPath = (GoodList<Edge<E>>)(posAndPath[1]);
 //			check element
-			if (next_pos.getElement() == element) return nextPath;
+			if (next_pos == end) return nextPath;
 //			iterate through unseen neighbors
 			GoodList<Edge<E>> ch = outgoingEdges(next_pos);
 			for (int j=0; j<ch.size(); j++) {
@@ -195,5 +210,19 @@ public class EdgeListGraph<V, E> {
 		}
 		return null;
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 }
