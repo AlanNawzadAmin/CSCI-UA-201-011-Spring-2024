@@ -225,7 +225,7 @@ Reading: 14.1, 2
 
 ### Class 21, April 17
 
-Searching in graphs.
+Graph implementations continued. Start searching in graphs.
 
 Reading: 14.3
 
@@ -241,14 +241,44 @@ In Textbook: 14.1-11, 13, 38
 
 #### Assignment 7 (Graph implementations) due
 
-More on searching in graphs, recursive backtracking
+Depth and breadth first search and variants.
 
 Reading: 14.3
 
 ### Class 23, April 24
 
-Shortest paths, directed acyclic graphs
+Dijkstra's algorithm ad adaptive priority queues
 
-Reading: 14.5, 6
+Reading: 14.6
+
+### Section 12, April 26
+
+#### Quiz 11 (Graph search)
+
+Searching and other graph algorithms.
+
+In Textbook: 14.14-17, 23, 24, 44, 51-56, 60, 63, 71
+
+### Class 24, April 29
+
+Implicits graph search, recursive backtracking, directed acyclic graphs.
+
+Reading: 14.5
+
+### Class 25, May 1
+
+TBD
+
+### Section 13, May 3
+
+#### Quiz remakes!
+
+Course review
+
+### Class 26, May 6
+#### Assignment 8 (Travelling salesman) due
+
+TBD
+
 
 
