@@ -1,0 +1,5 @@
+
+-- Graphs --
+Write out Dijkstra's algorithm.
+Why did we need to implement an adaptive priority queue for Dijkstra?
+If you had used and unsorted priority queue for Dijkstra, what would the complexity of Dijkstra be?
