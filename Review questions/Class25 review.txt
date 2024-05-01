@@ -1,0 +1,7 @@
+
+-- Graphs --
+What's the difference between an implicit and explicit graph search algorithm?
+What's the advantage of using DFS over BFS in the knapsack problem?
+By writing the knapsack problem as a recursive backtracking procedure, what optimizations were we able to implement (over a naive implementation)?
+What is the topological ordering of a directed acyclic graph?
+Write out an algorithm to determine a topological ordering.
