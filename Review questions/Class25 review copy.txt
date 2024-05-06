@@ -1,0 +1,8 @@
+
+-- Graphs --
+What is the topological ordering of a directed acyclic graph?
+Write out an algorithm to determine a topological ordering.
+What is a spanning tree?
+What is special about the spanning tree you get during BFS? How about during Dijkstra?
+What is a minimum spanning tree?
+Write out an algorithm to calculate a minimum spanning tree.
