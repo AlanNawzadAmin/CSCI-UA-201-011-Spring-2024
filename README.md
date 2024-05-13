@@ -267,7 +267,7 @@ Reading: 14.5
 
 ### Class 25, May 1
 
-TBD
+Finish directed acyclic graphs, implcit graph search, brief overview of minimum spanning trees.
 
 ### Section 13, May 3
 
@@ -278,7 +278,9 @@ Course review
 ### Class 26, May 6
 #### Assignment 8 (Travelling salesman) due
 
-TBD
+Text compression and search
+
+# Have a good summer!
 
 
 
