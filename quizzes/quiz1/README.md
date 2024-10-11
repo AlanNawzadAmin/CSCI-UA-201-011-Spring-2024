@@ -49,11 +49,3 @@ Swapping nodes: 3pt (0.5pt for each link)
 
 1. Initialization: some students store an integer to store the maximum value, which is fine. But it is incorrect to initialize the variable to be 0, because maybe the whole linked list is less than 0.
 2. Node ≠ Int. Pay attention to the variable type. Integer doesn’t have “getElement()”.
-
-## Statistics
-
-Mean: 6
-
-Median: 6.5
-
-Maximum: 10

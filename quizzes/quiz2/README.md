@@ -29,12 +29,6 @@ public interface GoodList<E> {
 }
 ```
 
-Statistics:
-
-Mean: 6
-
-Median: 7.5
-
 ## Common mistakes
 
 1. No one writes a correct O(N) algorithms
